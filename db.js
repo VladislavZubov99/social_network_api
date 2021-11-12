@@ -5,7 +5,7 @@ const knex = DATABASE_URL ? require('knex')({
   client: 'pg',
   connection: {
     connectionString: DATABASE_URL,
-    ssl: false
+    ssl: { rejectUnauthorized: false }
   }
 }) :  require('knex')({
   client: 'postgres',
