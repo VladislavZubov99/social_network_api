@@ -8,7 +8,7 @@ Example for variables you can see in .env.example
     npm install
 
 ## Create Empty Tables in Database
-<b>Note! This command clear all the data that was before<b/> 
+**Note! This command clear all the data that was before** 
 
     npm run migrate
 
