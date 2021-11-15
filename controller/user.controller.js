@@ -110,9 +110,9 @@ class UserController {
             )
             from posts
             where "posts"."user_id" = u.id
+             order by "posts"."created_at" desc
              ${limit ? 'limit ' + limit : ''}
              ${offset ? 'offset ' + offset : ''}
-             order by "posts"."created_at" desc
              ),NULL) as posts`))
         .where({
           email: req.user.email
