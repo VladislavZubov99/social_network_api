@@ -87,6 +87,13 @@ class PostController {
         return res.status(400).send({message: "Identificator is required"});
       }
 
+      const postUserId = await db.select('user_id').from('posts').where({id}).first()
+
+      if(postUserId !== req.user.id) return res.status(400).json({
+        success: false,
+        message: 'Permission denied'
+      });
+
       const post = await db('posts').where({id, user_id: req.user.id}).del();
 
       if (post) {
