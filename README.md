@@ -321,7 +321,6 @@ To get 10 comments through 5 in the post do this:
 `
 ### Body
     {
-        post_id:       "number",   !required
         title:         "string",   !required
     }
 ### Response
