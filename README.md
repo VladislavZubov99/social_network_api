@@ -1,7 +1,7 @@
 # REST API blog
 
 Before starting project you have to set the variables for your environment <br/>
-Example for variables you can see in .env.example
+You can see examples for variables in .env.example
 
 ## Install
 
