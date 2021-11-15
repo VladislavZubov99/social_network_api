@@ -223,7 +223,7 @@ To get 10 comments through 5 in the post do this:
 
 ## Create Post
 ### Request
-`POST /post`
+`POST /api/posts`
 
 `
  headers:
@@ -248,7 +248,7 @@ To get 10 comments through 5 in the post do this:
 
 ## Update Post by ID
 ### Request
-`PUT /post/[:id]`
+`PUT /api/posts`
 
 `
  headers:
@@ -256,7 +256,7 @@ To get 10 comments through 5 in the post do this:
 `
 ### Body
     {
-        title:         "string",   !required
+        title:         "string",   optional
         description:   "string",   optional
     }
 ### Response
@@ -272,7 +272,7 @@ To get 10 comments through 5 in the post do this:
 
 ## Delete Post by ID
 ### Request
-`DELETE /post/[:id]`
+`DELETE /api/posts/[:id]`
 
 `
  headers:
@@ -288,7 +288,7 @@ To get 10 comments through 5 in the post do this:
 
 ## Add Comment
 ### Request
-`POST /comments/`
+`POST /api/comments/`
 
 `
  headers:
@@ -313,7 +313,7 @@ To get 10 comments through 5 in the post do this:
 
 ## Edit Comment
 ### Request
-`PUT /comments/[:id]`
+`PUT /api/comments/[:id]`
 
 `
  headers:
@@ -335,7 +335,7 @@ To get 10 comments through 5 in the post do this:
 
 ## Delete Comment
 ### Request
-`DELETE /comments/[:id]`
+`DELETE /api/comments/[:id]`
 
 `
  headers:
