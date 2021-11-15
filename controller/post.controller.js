@@ -59,7 +59,7 @@ class PostController {
         return res.status(400).send('Title is required!!!');
       }
 
-      const newPost = await db('posts').insert({
+      const [newPost] = await db('posts').insert({
         title,
         description,
         user_id: req.user.id
@@ -123,7 +123,7 @@ class PostController {
         description
       } = req.body;
 
-      const updatedPost = await db('posts').update({
+      const [updatedPost] = await db('posts').update({
         title,
         description
       })

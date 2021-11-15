@@ -140,7 +140,7 @@ class UserController {
       const [updatedPerson] = await db('users').update({
         name,
         surname
-      }).where('email', req.user.email).returning(UPDATED_USER) || [];
+      }).where('email', req.user.email).returning(UPDATED_USER);
 
       return res.status(200).json(updatedPerson);
 

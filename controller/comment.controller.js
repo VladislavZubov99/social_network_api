@@ -17,7 +17,7 @@ class CommentController {
         return res.status(400).send({message: 'title is required!!!'});
       }
 
-      const newComment = await db('comments').insert({
+      const [newComment] = await db('comments').insert({
         title,
         post_id: post_id,
         user_id: req.user.id
@@ -49,7 +49,7 @@ class CommentController {
         title,
       } = req.body
 
-      const updatedComment = await db('comments').update({
+      const [updatedComment] = await db('comments').update({
         title,
       })
         .where({
