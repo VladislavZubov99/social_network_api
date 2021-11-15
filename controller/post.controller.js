@@ -123,6 +123,8 @@ class PostController {
         description
       } = req.body;
 
+      if (title === "") return res.status(400).send("Title can not be empty");
+
       const [updatedPost] = await db('posts').update({
         title,
         description
