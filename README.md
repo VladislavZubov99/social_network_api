@@ -256,7 +256,7 @@ To get 10 comments through 5 in the post do this:
 `
 ### Body
     {
-        title:         "string",   !required
+        title:         "string",   optional
         description:   "string",   optional
     }
 ### Response
