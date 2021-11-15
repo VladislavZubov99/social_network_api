@@ -80,7 +80,9 @@ Heroku Url:
 
 ## Get Profile
 ### Request
-`GET /api/user/profile
+`GET /api/user/profile`
+
+`
  headers:
     Authorization: token(string) !requred
 `
@@ -107,8 +109,9 @@ Heroku Url:
 
 ## Update Profile
 ### Request
-`PUT /api/user/pofile
- headers:
+`PUT /api/user/pofile`
+
+`headers:
     Authorization: token(string) !requred
 `
 ### Body
@@ -128,7 +131,9 @@ Heroku Url:
 
 ## Get Posts
 ### Request
-`GET /api/posts
+`GET /api/posts`
+
+`
  headers:
     Authorization: token(string) !requred
 `
@@ -173,7 +178,9 @@ the same for comments in each post: <br />
 
 ## Get Post by ID
 ### Request
-`GET /post/[:id]
+`GET /post/[:id]`
+
+`
  headers:
     Authorization: token(string) !requred
 `
@@ -209,7 +216,9 @@ To get 10 comments through 5 in the post do this:
 
 ## Create Post
 ### Request
-`POST /post
+`POST /post`
+
+`
  headers:
     Authorization: token(string) !requred
 `
@@ -232,7 +241,9 @@ To get 10 comments through 5 in the post do this:
 
 ## Update Post by ID
 ### Request
-`PUT /post/[:id]
+`PUT /post/[:id]`
+
+`
  headers:
     Authorization: token(string) !requred
 `
@@ -254,7 +265,9 @@ To get 10 comments through 5 in the post do this:
 
 ## Delete Post by ID
 ### Request
-`DELETE /post/[:id]
+`DELETE /post/[:id]`
+
+`
  headers:
     Authorization: token(string) !requred
 `
@@ -268,7 +281,9 @@ To get 10 comments through 5 in the post do this:
 
 ## Add Comment
 ### Request
-`POST /comments/
+`POST /comments/`
+
+`
  headers:
     Authorization: token(string) !requred
 `
@@ -290,7 +305,9 @@ To get 10 comments through 5 in the post do this:
 
 ## Edit Comment
 ### Request
-`PUT /comments/[:id]
+`PUT /comments/[:id]`
+
+`
  headers:
     Authorization: token(string) !requred
 `
@@ -310,7 +327,9 @@ To get 10 comments through 5 in the post do this:
 
 ## Delete Comment
 ### Request
-`DELETE /comments/[:id]
+`DELETE /comments/[:id]`
+
+`
  headers:
     Authorization: token(string) !requred
 `
