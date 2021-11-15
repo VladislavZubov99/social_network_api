@@ -41,10 +41,6 @@ class CommentController {
     try {
       const {id} = req.params;
 
-      if (!id) {
-        return res.status(400).send("Identificator is required");
-      }
-
       const {
         title,
       } = req.body
@@ -73,17 +69,6 @@ class CommentController {
   async deleteComment(req, res) {
     try {
       const {id} = req.params;
-
-      if (!id) {
-        return res.status(400).send("Identificator is required");
-      }
-
-      const commentUserId = await db.select('user_id').from('comments').where({id}).first()
-
-      if(commentUserId !== req.user.id) return res.status(400).json({
-        success: false,
-        message: 'Permission denied'
-      });
 
       const isDeleted = await db('comments')
         .where({
