@@ -87,6 +87,13 @@ Heroku Url:
     Authorization: token(string) !requred
 `
 
+To get 10 posts through 5 do this:
+
+    `/api/users/profile?limit=10&offset=5`
+
+`offset=5`  means, ‘skip the first 5 posts’ <br />
+`limit=10`  means, ‘return a maximum of 10 posts’ <br />
+
 ### Response
         Status: 200 OK
     {
