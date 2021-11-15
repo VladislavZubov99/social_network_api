@@ -1,7 +1,7 @@
 # REST API blog
 
 Before starting project you have to set the variables for your environment <br/>
-Example for variables you can see in .env.example
+You can see examples for variables in .env.example
 
 ## Install
 
@@ -81,6 +81,12 @@ Heroku Url:
 ## Get Profile
 ### Request
 `GET /api/user/profile`
+
+`
+ headers:
+    Authorization: token(string) !requred
+`
+
 ### Response
         Status: 200 OK
     {
@@ -104,6 +110,10 @@ Heroku Url:
 ## Update Profile
 ### Request
 `PUT /api/user/pofile`
+
+`headers:
+    Authorization: token(string) !requred
+`
 ### Body
     {
         name:      "string",   optional
@@ -122,6 +132,11 @@ Heroku Url:
 ## Get Posts
 ### Request
 `GET /api/posts`
+
+`
+ headers:
+    Authorization: token(string) !requred
+`
 
 
 ### Params
@@ -164,6 +179,11 @@ the same for comments in each post: <br />
 ## Get Post by ID
 ### Request
 `GET /post/[:id]`
+
+`
+ headers:
+    Authorization: token(string) !requred
+`
 ### Params
 To get 10 comments through 5 in the post do this:
 
@@ -197,6 +217,11 @@ To get 10 comments through 5 in the post do this:
 ## Create Post
 ### Request
 `POST /post`
+
+`
+ headers:
+    Authorization: token(string) !requred
+`
 ### Body
     {
         title:         "string",   !required
@@ -217,6 +242,11 @@ To get 10 comments through 5 in the post do this:
 ## Update Post by ID
 ### Request
 `PUT /post/[:id]`
+
+`
+ headers:
+    Authorization: token(string) !requred
+`
 ### Body
     {
         title:         "string",   !required
@@ -236,6 +266,11 @@ To get 10 comments through 5 in the post do this:
 ## Delete Post by ID
 ### Request
 `DELETE /post/[:id]`
+
+`
+ headers:
+    Authorization: token(string) !requred
+`
 ### Response
         Status: 200 OK
     {
@@ -247,6 +282,11 @@ To get 10 comments through 5 in the post do this:
 ## Add Comment
 ### Request
 `POST /comments/`
+
+`
+ headers:
+    Authorization: token(string) !requred
+`
 ### Body
     {
         title:         "string",   !required
@@ -266,6 +306,11 @@ To get 10 comments through 5 in the post do this:
 ## Edit Comment
 ### Request
 `PUT /comments/[:id]`
+
+`
+ headers:
+    Authorization: token(string) !requred
+`
 ### Body
     {
         title:         "string",   !required
@@ -283,6 +328,11 @@ To get 10 comments through 5 in the post do this:
 ## Delete Comment
 ### Request
 `DELETE /comments/[:id]`
+
+`
+ headers:
+    Authorization: token(string) !requred
+`
 ### Response
         Status: 200 OK
     {
