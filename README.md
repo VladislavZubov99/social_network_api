@@ -80,7 +80,7 @@ Heroku Url:
 
 ## Get Profile
 ### Request
-`GET /api/user/profile`
+`GET /api/users/profile`
 
 `
  headers:
