@@ -1,4 +1,4 @@
-# REST API blog (Express, Postgresql)
+# REST API (Express, Postgresql)
 
 Before starting project you have to set the variables for your environment <br/>
 You can see examples for variables in .env.example
